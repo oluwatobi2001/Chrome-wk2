@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Add Button",
+    "version": "1.0",
+    "description": "An extension that alerts a response when clicked",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["ContentScript.js"],
+        "css": ["Button.css"]
+      }
+    ]
+  }
